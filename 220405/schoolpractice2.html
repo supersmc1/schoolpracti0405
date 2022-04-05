@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .table{
+      width: 1920px;
+      height: 1080px;
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 핸드폰 */
+    .iphone{
+      width: 428px;
+      height: 926px;
+      background-color:black;
+      border: 2px solid black;
+      border-radius: 30px 30px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .display{
+      width: 415px;
+      height: 900px;
+      background-color: white;
+      border-radius: 30px 30px 30px 30px;
+
+
+    }
+    .noch{
+      width: 415px;
+      height: 30px;
+      border-radius: 30px 30px 0px 0px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+    }
+    .noch>div:nth-child(1){
+      width: 70px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .noch>div:nth-child(2){
+      width: 200px;
+      height: 30px;
+      background-color: black;
+      border-radius: 0px 0px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .noch>div:nth-child(2)>div{
+      width: 70px;
+      height: 8px;
+      background-color: gray;
+      border-radius: 30px 30px 30px 30px;
+    }
+    
+    .header{
+      width: 415px;
+      height: 120px;
+      border: 1px solid black;
+
+    }
+
+    .header>div:nth-child(1){
+      width: auto;
+      height: 60px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header>div:nth-child(2){
+      width: auto;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header>div:nth-child(2)>div{
+      width: 300px;
+      height: 45px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    .main{
+      width: 415px;
+      height: 710px;
+      border: 1px solid black;
+      display: flex;
+    } 
+    /* 메인 왼쪽부분 */
+    .left{
+      width: 110px;
+      height: 710px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .left>div{
+      width: 90px;
+      height: 90px;
+      border: 1px solid black;
+    }
+
+    /* 메인 오른쪽 부분 */
+    .right{
+      width: 305px;
+      height: 710px;
+      border: 1px solid black;
+    }
+    .right>div:nth-child(1){
+      width: 305px;
+      height: 355px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right>div:nth-child(1)>div{
+      width: 250px;
+      height: 250px;
+      border: 1px solid black;
+    }
+    .right>div:nth-child(2){
+      width: 305px;
+      height: 355px;
+      border: 1px solid black;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+    .right>div:nth-child(2)>div:nth-child(1){
+      width: 120px;
+      height: 40px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right>div:nth-child(2)>div:nth-child(2){
+      width: 280px;
+      height: 150px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right>div:nth-child(2)>div:nth-child(3){
+      width: 200px;
+      height: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .right>div:nth-child(2)>div:nth-child(3)>div{
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    .right>div:nth-child(2)>div:nth-child(4){
+      width: 60px;
+      height: 40px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="iphone">
+      <div class="display">
+        <!-- m자탈모 -->
+        <div class="noch">
+          <div>12:00</div>
+          <div>
+            <div></div>
+          </div>
+        <div>WIFi-zone</div>
+      </div>
+
+          <!-- 머리부분 -->
+      <div class="header">
+
+        <div>
+          <div></div>
+          <div>햄버거</div>
+        </div>
+
+        <div>
+          <div>
+            <li>식사류</li>
+            <li>튀김요리</li>
+            <li>볶음요리</li>
+            <li>주류/음료</li>
+          </div>
+        </div>
+
+      </div>
+
+            <!-- 몸통부분 -->
+      <div class="main">
+        <div class="left">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+        <div class="right">
+          
+          <div>
+            <div></div>
+          </div>
+
+          <div>
+            <div><h2>문어 짬뽕</h2></div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, amet sed. Vitae qui cumque consectetur, nesciunt perferendis temporibus suscipit, debitis voluptatum mollitia voluptates, ad dolorem? Commodi
+              </div>
+            <div>
+              <div>-</div>
+              <div>1</div>
+              <div>+</div>
+            </div>
+            <div>결제</div>
+          </div>
+        </div>
+
+      </div>
+
+            <!-- 홈스콜부분 -->
+      <div class="home">
+        <div></div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0; padding: 0;}
+
+    .table{
+      width: 1920px;
+      height: 1080px;
+      background-color: lightcoral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 핸드폰 */
+    .iphone{
+      width: 428px;
+      height: 926px;
+      background-color:black;
+      border: 2px solid black;
+      border-radius: 30px 30px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .display{
+      width: 415px;
+      height: 900px;
+      background-color: white;
+      border-radius: 30px 30px 30px 30px;
+
+
+    }
+    .noch{
+      width: 415px;
+      height: 30px;
+      border-radius: 30px 30px 0px 0px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+    }
+    .noch>div:nth-child(1){
+      width: 70px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .noch>div:nth-child(2){
+      width: 200px;
+      height: 30px;
+      background-color: black;
+      border-radius: 0px 0px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .noch>div:nth-child(2)>div{
+      width: 70px;
+      height: 8px;
+      background-color: gray;
+      border-radius: 30px 30px 30px 30px;
+    }
+    /* 헤더부분 */
+    .header{
+      width: 415px;
+      height: 80px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.9);
+    
+
+    }
+    .header>div{
+      width: 380px;
+      height: 55px;
+      border: 1px solid black;
+      border-radius: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgb(219, 16, 16)
+    }
+    .header>div>div:nth-child(1){
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 30%;
+      background-color: gold;
+    }
+    .header>div>div:nth-child(3){
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 30%;
+      background-color: gold;
+    }
+    .menu{
+      width: 415px;
+      height: 50px;
+      border:1px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      background-color: black;
+      opacity: 0.9;
+    }
+    li{
+      color: white;
+    }
+
+    .main{
+      width: 415px;
+      height: 500px;
+    }
+
+    .main1{
+      width: 415px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main1>div{
+      width: 400px;
+      height: 240px;
+      border-radius: 20px 20px 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://store.img11.co.kr/68634929/c3df324e-b0e0-4d76-ba38-c0d1bb8d30d7_1641357086422.png);
+      background-repeat : no-repeat;
+      background-size : cover;
+      background-position:center bottom;
+    }
+    .main1>div>div{
+      width: 180px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px 20px 20px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .main1>div>div>h2{
+      color: aliceblue;
+    }
+    .main2{
+      width: 415px;
+      height: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+    .main2>div{
+      width: 400px;
+      height: 240px;
+      border-radius:20px 20px 20px 20px;
+      display:flex;
+      justify-content: space-around;
+      align-items:flex-end;
+      background-image: url(https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/200811/htm_2008112703035230003800-001.JPG/_ir_556x312_/);
+      background-repeat : no-repeat;
+      background-size : cover;
+    }
+    .main2>div>div{
+      width: 123px;
+      height: 50px;
+      border-radius:20px 20px 20px 20px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .main2>div>div>div>h3{
+      color: aliceblue;
+    }
+    .main2>div>div{
+      color: white;
+    }
+
+    .bottom{
+      width: 415px;
+      height: 232px;
+    }
+    .bottom>div:nth-child(1){
+      width: 415px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .bottom>div:nth-child(1)>div{
+      width: 180px;
+      height: 50px;
+      border-radius: 20px 20px 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgb(219, 16, 16)
+      
+
+    }
+    .bottom>div:nth-child(2){
+      width: 415px;
+      height: 140px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .bottom>div:nth-child(2)>div:nth-child(1){
+      width: 190px;
+      height: 120px;
+      border: 1px solid black;
+      border-radius: 20px 20px 20px 20px;
+      background-image: url(http://file3.instiz.net/data/file3/2019/05/02/6/5/c/65c99f73c3a0d0ffbf7ed85de3e71aa7.jpg);
+      background-repeat : no-repeat;
+      background-size : cover;
+      background-position:bottom center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: white;
+    }
+    .bottom>div:nth-child(2)>div:nth-child(2){
+      width: 190px;
+      height: 120px;
+      border: 1px solid black;
+      border-radius: 20px 20px 20px 20px;
+      background-image: url(http://file3.instiz.net/data/file3/2019/05/02/a/8/0/a80b7a032e672b8eefa00fb371e1d936.jpg);
+      background-repeat : no-repeat;
+      background-size : cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: white;
+
+    }
+    .bottom>div:nth-child(3){
+      width: 415px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bottom>div:nth-child(3)>div{
+      width: 150px;
+      height: 5px;
+      background-color: gray;
+      border-radius: 30px 30px 30px 30px;
+    }
+     
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="iphone">
+      <div class="display">
+        <!-- m자탈모 -->
+        <div class="noch">
+          <div>12:00</div>
+          <div>
+            <div></div>
+          </div>
+          <div>WIFi-zone</div>
+        </div>
+
+       <!-- 헤드부분 -->
+        <div class="header">
+          <div>
+            <div></div>
+            <div><h1>CHINES FOOD</h1></div>
+            <div></div>
+          </div>  
+        </div>
+
+        <!-- 메뉴바 -->
+        <div class="menu">
+          <li>소개</li>
+          <li>매장소개</li>
+          <li>메뉴</li>
+          <li>창업문의</li>
+          <li>고객센터</li>
+        </div>
+
+        <!--메인 중앙 부분  -->
+        <div class="main">
+
+          <div class="main1">
+            <div>
+              <div><h2>짜장? vs 짬뽕?</h2></div>
+            </div>
+          </div>
+
+
+          <div class="main2">
+            <div>
+              <div>
+                <div><h3>신선한 재료</h3></div>
+                <div>깔끔한 위생</div>
+              </div>
+              <div>
+                <div><h3>합리적인 가격</h3></div>
+                <div>뛰어난 맛</div>
+              </div>
+              <div>
+                <div><h3>친절한 응대</h3></div>
+                <div>편안한 인테리어</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- 메인 하단부분 -->
+        <div class="bottom">
+
+          <div>
+            <div><h1>HOT-PICK</h1></div>
+          </div>
+
+          <div>
+            <div>A-set</div>
+            <div>B-set</div>
+          </div>
+
+          <div>
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
